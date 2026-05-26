@@ -1,17 +1,21 @@
-import { Text, View, StyleSheet, ScrollView } from "react-native";
+import { Text, View, StyleSheet, ScrollView, Alert} from "react-native";
+import Card from "@/components/card"
 
 export default function RatStar() {
+
+    Alert.alert("Welcome to RatStar!", "Get ready for some daily rat affirmations!");
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <Text style={styles.title}>🐀 Daily Ratffirmations 🐀</Text>
 
-      <View style={styles.card}>
-        <Text style={styles.affirmation}>You have the most magnificent whiskers anyone has ever seen.</Text>
-      </View>
 
-      <View style={styles.card}>
+      <Card>
+        <Text style={styles.affirmation}>You are the most amazing rat in the world.</Text>
+      </Card>
+
+    <Card>
         <Text style={styles.affirmation}>Your tail is perfectly long and wonderfully expressive.</Text>
-      </View>
+    </Card>
 
       <View style={styles.card}>
         <Text style={styles.affirmation}>You are an excellent forager. The best, actually.</Text>
