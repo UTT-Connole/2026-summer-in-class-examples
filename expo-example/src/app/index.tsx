@@ -27,6 +27,8 @@ export default function Index() {
   return (
     <View style={styles.container}>
       <Link href="/ratstar"> Go to Ratfirmations</Link>
+      <Link href="/chocolate_chip"> Go to Chocolate Chip</Link>
+      <Link href="/cookie_form"> Go to Cookie Form</Link>
 
       <Link href="/ratstar" asChild>
       <Pressable>
