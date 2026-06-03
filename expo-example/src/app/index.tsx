@@ -29,6 +29,7 @@ export default function Index() {
       <Link href="/ratstar"> Go to Ratfirmations</Link>
       <Link href="/chocolate_chip"> Go to Chocolate Chip</Link>
       <Link href="/cookie_form"> Go to Cookie Form</Link>
+      <Link href="/list_of_cookies"> Go to List of Cookies</Link>
 
       <Link href="/ratstar" asChild>
       <Pressable>
