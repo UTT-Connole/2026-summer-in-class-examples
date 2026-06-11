@@ -1,28 +1,24 @@
-import { Text, View, StyleSheet, Pressable } from "react-native";
-import {useState} from "react"
-import { Link, useRouter } from 'expo-router';
+import { Link, useRouter } from "expo-router";
+import { Pressable, StyleSheet, Text, View } from "react-native";
 
+import { useState } from "react";
 
 export default function Index() {
-
-  const [studentName, setStudentName]= useState("Corbin")
+  const [studentName, setStudentName] = useState("Corbin");
 
   const router = useRouter();
 
-
   let updateStudentName = () => {
-    console.log(studentName)
-    setStudentName("Joseph")
-    console.log(studentName)
-  }
+    console.log(studentName);
+    setStudentName("Joseph");
+    console.log(studentName);
+  };
 
   let logRat = (word) => {
-    console.log("Rat")
-    console.log(word)
-    return () => console.log("Rattigan")
-  }
-
-
+    console.log("Rat");
+    console.log(word);
+    return () => console.log("Rattigan");
+  };
 
   return (
     <View style={styles.container}>
@@ -30,15 +26,15 @@ export default function Index() {
       <Link href="/chocolate_chip"> Go to Chocolate Chip</Link>
       <Link href="/cookie_form"> Go to Cookie Form</Link>
       <Link href="/list_of_cookies"> Go to List of Cookies</Link>
-      <Link href="/movies"> Go to Movies</Link>
+      <Link href="/colors/rainbow"> Go to Rainbow</Link>
 
       <Link href="/ratstar" asChild>
-      <Pressable>
-        <Text>Go to Ratfirmations</Text>
-      </Pressable>
+        <Pressable>
+          <Text>Go to Ratfirmations</Text>
+        </Pressable>
       </Link>
 
-      <Text >Hello Class!</Text>
+      <Text>Hello Class!</Text>
       <Text onPress={updateStudentName}>Click on Me!</Text>
 
       <Text onPress={logRat}>Rat1</Text>
@@ -51,7 +47,6 @@ export default function Index() {
       <Text>Hello Class!</Text>
     </View>
   );
-  
 }
 
 const styles = StyleSheet.create({
