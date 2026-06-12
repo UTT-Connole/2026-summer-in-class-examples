@@ -1,6 +1,7 @@
 import { Text, View, StyleSheet, Pressable } from "react-native";
 import {useState} from "react"
 import { Link, useRouter } from 'expo-router';
+import {useColor} from '@/contexts/colorContext';
 
 
 export default function Index() {
@@ -9,6 +10,8 @@ export default function Index() {
 
   const router = useRouter();
 
+
+  const {color} = useColor();
 
   let updateStudentName = () => {
     console.log(studentName)
@@ -30,7 +33,8 @@ export default function Index() {
       <Link href="/chocolate_chip"> Go to Chocolate Chip</Link>
       <Link href="/cookie_form"> Go to Cookie Form</Link>
       <Link href="/list_of_cookies"> Go to List of Cookies</Link>
-      <Link href="/movies"> Go to Movies</Link>
+      <Text style={{color: color}}>This text is {color}</Text>  
+      <Link href="/raindbow"> Go to Rainbow</Link>
 
       <Link href="/ratstar" asChild>
       <Pressable>
