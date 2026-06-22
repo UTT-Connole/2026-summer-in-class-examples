@@ -1,13 +1,14 @@
-import { FontAwesome5 } from "@expo/vector-icons";
 import React, { useEffect, useState } from "react";
-import { View, Text, TextInput } from "react-native";
+import { StyleSheet, Text, TextInput, View } from "react-native";
+
+import { FontAwesome5 } from "@expo/vector-icons";
 
 type IngredientInputProps = {
   label: string;
   placeholder: string;
   value: string;
   field: string;
-  keyboardType: 'decimal-pad' | 'number-pad';
+  keyboardType: "decimal-pad" | "number-pad";
   onChange: (field: string, value: string) => void;
 };
 
@@ -32,3 +33,23 @@ export default function IngredientInput({
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  formGroup: {
+    marginBottom: 15,
+  },
+  label: {
+    fontSize: 14,
+    fontWeight: "600",
+    marginBottom: 5,
+    color: "#333",
+  },
+  input: {
+    borderWidth: 1,
+    borderColor: "#ddd",
+    borderRadius: 8,
+    padding: 10,
+    backgroundColor: "#fff",
+    fontSize: 16,
+  },
+});
