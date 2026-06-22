@@ -29,6 +29,7 @@ export default function Index() {
       <Link href="/memo_vs_effect"> Go to useMemo vs useEffect</Link>
       <Link href="/cookie_form"> Go to Cookie Form</Link>
       <Link href="/list_of_cookies"> Go to List of Cookies</Link>
+      <Link href="/symbol_showcase"> Go to Symbol Showcase</Link>
       <Text style={{ color: color }}>This text is {color}</Text>
       <Link href="/raindbow"> Go to Rainbow</Link>
 
