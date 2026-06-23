@@ -38,7 +38,12 @@ export default function App() {
         Fib of {num} is {fibResult}
       </Text>
 
-      <Pressable style={styles.button} onPress={() => setNum(num + 1)}>
+      <Pressable style={styles.button} onPress={() => setNum(num + 1)}
+      accessibilityRole="button"
+      accessibilityLabel="Increment Fibonacci number"
+      accessibilityHint="Increments the number for which Fibonacci is calculated"
+        
+        >
         <Text style={styles.buttonText}>Increment Num</Text>
       </Pressable>
 
