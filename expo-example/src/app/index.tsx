@@ -27,6 +27,7 @@ export default function Index() {
       <Link href="/ratstar"> Go to Ratfirmations</Link>
       <Link href="/chocolate_chip"> Go to Chocolate Chip</Link>
       <Link href="/memo_vs_effect"> Go to useMemo vs useEffect</Link>
+      <Link href="/testing_library"> Go to Testing Library</Link>
       <Link href="/cookie_form"> Go to Cookie Form</Link>
       <Link href="/list_of_cookies"> Go to List of Cookies</Link>
       <Link href="/symbol_showcase"> Go to Symbol Showcase</Link>
